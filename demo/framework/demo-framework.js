@@ -15,7 +15,7 @@ angular.module("demo", ["ngRoute", "dndLists"])
                 '</li>',
             link: function (scope, element, attr) {
                 scope.options = [
-                    { label: "Nested Containers", href: "#/nested" }
+                    { label: "Module Maker", href: "#/nested" }
                 ];
 
                 scope.isActive = function (option) {

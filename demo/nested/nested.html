@@ -29,7 +29,7 @@
 
 <!-- Template for a normal list item -->
 <script type="text/ng-template" id="item.html">
-    <div class="item">Item {{item.id}}</div>
+    <div class="item">Task {{item.id}}</div>
 </script>
 
 <!-- Main area with dropzones and source code -->
@@ -38,7 +38,7 @@
         <div ng-repeat="(zone, list) in models.dropzones" class="col-md-6">
             <div class="dropzone box box-yellow">
                 <!-- The dropzone also uses the list template -->
-                <h3>Dropzone {{zone}}</h3>
+                <h3>Zone {{zone}}</h3>
                 <div ng-include="'list.html'"></div>
             </div>
         </div>
@@ -73,7 +73,7 @@
 
     <div class="trashcan box box-grey box-padding">
         <!-- If you use [] as referenced list, the dropped elements will be lost -->
-        <h3>Trashcan</h3>
+        <h3>Delete</h3>
         <ul dnd-list="[]">
             <li><img src="nested/trashcan.jpg"></li>
         </ul>
